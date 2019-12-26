@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AlarmDemoo</string>
+    <string name="str_button1">设置闹钟</string>
+    <string name="str_button2">删除闹钟</string>
+    <string name="str_title2">重复闹钟</string>
+    <string name="str_title3">闹钟一</string>
+    <string name="str_title4">闹钟二</string>
+    <string name="str_title5">闹钟三</string>
+    <string name="str_title6">闹钟四</string>
+    <string name="str_title7">闹钟五</string>
+    <string name="str_default">目前无设置</string>
+    <string name="str_text1">开始时间</string>
+    <string name="str_text2">重复闹钟</string>
+    <string name="str_text3">秒</string>
+    <string name="str_text5">秒</string>
+    <string name="mark">分记</string>
+
+    <string name="Mon">一</string>
+    <string name="Tue">二</string>
+    <string name="Wed">三</string>
+    <string name="Thu">四</string>
+    <string name="Fri">五</string>
+    <string name="Sat">六</string>
+    <string name="Sun">日</string>
+
+    <string name="diary_edit">编辑</string>
+    <string name="notepad_title">标题:</string>
+    <string name="notepad_body">内容:</string>
+    <string name="notepad_button">确定</string>
+    <string name="menu_insert">Add</string>
+    <string name="menu_delete">Delete</string>
+    <string name="edit_diary">Edit</string>
+</resources>
