@@ -1,292 +1,268 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
 
     <DigitalClock
         android:id="@+id/dClock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:textColor="@drawable/other"
         android:layout_x="85px"
         android:layout_y="0px"
-        >
-    </DigitalClock>
+        android:textColor="@drawable/other"
+        android:textSize="40sp" />
+
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_title3"
-        android:textSize="20sp"
-        android:textColor="@drawable/black"
         android:layout_x="105px"
         android:layout_y="70px"
-        >
-    </TextView>
+        android:text="@string/str_title3"
+        android:textColor="@drawable/black"
+        android:textSize="20sp"></TextView>
+
     <Button
         android:id="@+id/mButton1"
         android:layout_width="wrap_content"
-        android:layout_height="50px"
-        android:text="@string/str_button1"
-        android:textColor="@drawable/black"
-        android:textSize="12sp"
+        android:layout_height="wrap_content"
         android:layout_x="260px"
         android:layout_y="70px"
-        >
-    </Button>
+        android:text="@string/str_button1"
+        android:textColor="@drawable/black"
+        android:textSize="12sp"></Button>
 
     <TextView
         android:id="@+id/setTime1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_default"
-        android:textColor="@drawable/red"
-        android:textSize="16sp"
         android:layout_x="95px"
         android:layout_y="110px"
-        >
-    </TextView>
+        android:text="@string/str_default"
+        android:textColor="@drawable/red"
+        android:textSize="16sp"></TextView>
+
     <Button
         android:id="@+id/mButton2"
         android:layout_width="wrap_content"
-        android:layout_height="50px"
-        android:text="@string/str_button2"
-        android:textColor="@drawable/black"
-        android:textSize="12sp"
+        android:layout_height="wrap_content"
         android:layout_x="260px"
         android:layout_y="110px"
-        >
-    </Button>
+        android:text="@string/str_button2"
+        android:textColor="@drawable/black"
+        android:textSize="12sp"></Button>
 
     <TextView
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_title4"
-        android:textSize="20sp"
-        android:textColor="@drawable/black"
         android:layout_x="105px"
         android:layout_y="160px"
-        >
-    </TextView>
+        android:text="@string/str_title4"
+        android:textColor="@drawable/black"
+        android:textSize="20sp"></TextView>
+
     <Button
         android:id="@+id/mButton3"
         android:layout_width="wrap_content"
-        android:layout_height="50px"
-        android:text="@string/str_button1"
-        android:textColor="@drawable/black"
-        android:textSize="12sp"
+        android:layout_height="wrap_content"
         android:layout_x="260px"
         android:layout_y="160px"
-        >
-    </Button>
+        android:text="@string/str_button1"
+        android:textColor="@drawable/black"
+        android:textSize="12sp"></Button>
 
     <TextView
         android:id="@+id/setTime2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_default"
-        android:textColor="@drawable/red"
-        android:textSize="16sp"
         android:layout_x="95px"
         android:layout_y="200px"
-        >
-    </TextView>
+        android:text="@string/str_default"
+        android:textColor="@drawable/red"
+        android:textSize="16sp"></TextView>
+
     <Button
         android:id="@+id/mButton4"
         android:layout_width="wrap_content"
-        android:layout_height="50px"
-        android:text="@string/str_button2"
-        android:textColor="@drawable/black"
-        android:textSize="12sp"
+        android:layout_height="wrap_content"
         android:layout_x="260px"
         android:layout_y="200px"
-        >
-    </Button>
+        android:text="@string/str_button2"
+        android:textColor="@drawable/black"
+        android:textSize="12sp"></Button>
 
     <TextView
         android:id="@+id/text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_title5"
-        android:textSize="20sp"
-        android:textColor="@drawable/black"
         android:layout_x="105px"
-        android:layout_y="250px"
-        >
-    </TextView>
+        android:layout_y="50px"
+        android:text="@string/str_title5"
+        android:textColor="@drawable/black"
+        android:textSize="20sp"></TextView>
+
     <Button
         android:id="@+id/mButton5"
         android:layout_width="wrap_content"
-        android:layout_height="50px"
+        android:layout_height="wrap_content"
+        android:layout_x="260px"
+        android:layout_y="50px"
         android:text="@string/str_button1"
         android:textColor="@drawable/black"
-        android:textSize="12sp"
-        android:layout_x="260px"
-        android:layout_y="250px"
-        >
-    </Button>
+        android:textSize="12sp"></Button>
 
     <TextView
         android:id="@+id/setTime3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_default"
-        android:textColor="@drawable/red"
-        android:textSize="16sp"
         android:layout_x="95px"
         android:layout_y="290px"
-        >
-    </TextView>
+        android:text="@string/str_default"
+        android:textColor="@drawable/red"
+        android:textSize="16sp"></TextView>
+
     <Button
         android:id="@+id/mButton6"
         android:layout_width="wrap_content"
-        android:layout_height="50px"
-        android:text="@string/str_button2"
-        android:textColor="@drawable/black"
-        android:textSize="12sp"
+        android:layout_height="wrap_content"
         android:layout_x="260px"
         android:layout_y="290px"
-        >
-    </Button>
+        android:text="@string/str_button2"
+        android:textColor="@drawable/black"
+        android:textSize="12sp"></Button>
+
     <TextView
         android:id="@+id/text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_title6"
-        android:textSize="20sp"
-        android:textColor="@drawable/black"
         android:layout_x="105px"
         android:layout_y="340px"
-        >
-    </TextView>
+        android:text="@string/str_title6"
+        android:textColor="@drawable/black"
+        android:textSize="20sp"></TextView>
+
     <Button
         android:id="@+id/mButton7"
         android:layout_width="wrap_content"
-        android:layout_height="50px"
-        android:text="@string/str_button1"
-        android:textColor="@drawable/black"
-        android:textSize="12sp"
+        android:layout_height="wrap_content"
         android:layout_x="260px"
         android:layout_y="340px"
-        >
-    </Button>
+        android:text="@string/str_button1"
+        android:textColor="@drawable/black"
+        android:textSize="12sp"></Button>
 
     <TextView
         android:id="@+id/setTime4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_default"
-        android:textColor="@drawable/red"
-        android:textSize="16sp"
         android:layout_x="95px"
         android:layout_y="380px"
-        >
-    </TextView>
+        android:text="@string/str_default"
+        android:textColor="@drawable/red"
+        android:textSize="16sp"></TextView>
+
     <Button
         android:id="@+id/mButton8"
         android:layout_width="wrap_content"
-        android:layout_height="50px"
-        android:text="@string/str_button2"
-        android:textColor="@drawable/black"
-        android:textSize="12sp"
+        android:layout_height="wrap_content"
         android:layout_x="260px"
         android:layout_y="380px"
-        >
-    </Button>
+        android:text="@string/str_button2"
+        android:textColor="@drawable/black"
+        android:textSize="12sp"></Button>
+
     <TextView
         android:id="@+id/text5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_title7"
-        android:textSize="20sp"
-        android:textColor="@drawable/black"
         android:layout_x="105px"
         android:layout_y="430px"
-        >
-    </TextView>
+        android:text="@string/str_title7"
+        android:textColor="@drawable/black"
+        android:textSize="20sp"></TextView>
+
     <Button
         android:id="@+id/mButton9"
         android:layout_width="wrap_content"
-        android:layout_height="50px"
-        android:text="@string/str_button1"
-        android:textColor="@drawable/black"
-        android:textSize="12sp"
+        android:layout_height="wrap_content"
         android:layout_x="260px"
         android:layout_y="430px"
-        >
-    </Button>
+        android:text="@string/str_button1"
+        android:textColor="@drawable/black"
+        android:textSize="12sp"></Button>
 
     <TextView
         android:id="@+id/setTime5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_default"
-        android:textColor="@drawable/red"
-        android:textSize="16sp"
         android:layout_x="95px"
         android:layout_y="470px"
-        >
-    </TextView>
+        android:text="@string/str_default"
+        android:textColor="@drawable/red"
+        android:textSize="16sp"></TextView>
+
     <Button
         android:id="@+id/mButton10"
         android:layout_width="wrap_content"
-        android:layout_height="50px"
-        android:text="@string/str_button2"
-        android:textColor="@drawable/black"
-        android:textSize="12sp"
+        android:layout_height="wrap_content"
         android:layout_x="260px"
         android:layout_y="470px"
-        >
-    </Button>
+        android:text="@string/str_button2"
+        android:textColor="@drawable/black"
+        android:textSize="12sp"></Button>
+
     <TextView
         android:id="@+id/text6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_title2"
-        android:textSize="20sp"
-        android:textColor="@drawable/black"
         android:layout_x="95px"
         android:layout_y="520px"
-        >
-    </TextView>
+        android:text="@string/str_title2"
+        android:textColor="@drawable/black"
+        android:textSize="20sp"></TextView>
+
     <Button
         android:id="@+id/mButton11"
         android:layout_width="wrap_content"
-        android:layout_height="50px"
-        android:text="@string/str_button1"
-        android:textColor="@drawable/black"
-        android:textSize="12sp"
+        android:layout_height="wrap_content"
         android:layout_x="260px"
         android:layout_y="520px"
-        >
-    </Button>
+        android:text="@string/str_button1"
+        android:textColor="@drawable/black"
+        android:textSize="12sp"></Button>
 
     <TextView
         android:id="@+id/setTime6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/str_default"
-        android:textColor="@drawable/red"
-        android:textSize="16sp"
         android:layout_x="95px"
         android:layout_y="560px"
-        >
-    </TextView>
+        android:text="@string/str_default"
+        android:textColor="@drawable/red"
+        android:textSize="16sp"></TextView>
+
     <Button
         android:id="@+id/mButton12"
         android:layout_width="wrap_content"
-        android:layout_height="50px"
-        android:text="@string/str_button2"
-        android:textColor="@drawable/black"
-        android:textSize="12sp"
+        android:layout_height="wrap_content"
         android:layout_x="260px"
         android:layout_y="560px"
-        >
-    </Button>
-
-</AbsoluteLayout>
+        android:text="@string/str_button2"
+        android:textColor="@drawable/black"
+        android:textSize="12sp"></Button>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

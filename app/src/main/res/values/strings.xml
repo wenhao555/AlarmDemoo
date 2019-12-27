@@ -14,7 +14,16 @@
     <string name="str_text3">秒</string>
     <string name="str_text5">秒</string>
     <string name="mark">分记</string>
-
+    <string name="note">文字</string>
+    <string name="img">图片</string>
+    <string name="vid">视频</string>
+    <string name="tip">在这里记录您的故事吧</string>
+    <string name="add">添加</string>
+    <string name="back">返回</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="save">确认</string>
+    <string name="cancel">取消</string>
     <string name="Mon">一</string>
     <string name="Tue">二</string>
     <string name="Wed">三</string>

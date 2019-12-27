@@ -2,13 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.alarmdemoo">
     <!-- 往sdcard中写入数据的权限 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
-    <!-- 在sdcard中创建/删除文件的权限 -->
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
-    <!-- 访问互联网 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- 包管理 -->
-    <uses-permission android:name="android.permission.RESTART_PACKAGES"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> <!-- 访问互联网 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 包管理 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,21 +14,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MiaobiaoActivity"></activity>
-        <activity android:name=".AlarmAlertActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity
-            android:name=".util.ImageDemo"
-            android:label="@string/app_name">
+        <activity android:name=".WeatherActivity"></activity>
+        <activity android:name=".EditTextActivity" />
+        <activity android:name=".LookNoteActivity" />
+        <activity android:name=".ActionActivity" />
+        <activity android:name=".JishibenActivity" />
+        <activity android:name=".MiaobiaoActivity" />
+        <activity android:name=".AlarmAlertActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".util.ImageDemo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".util.BaseCalendar"></activity>
-        <activity android:name=".util.CalendarGridView"></activity>
-        <activity android:name=".util.AdvancedCountdownTimer"></activity>
+        <activity android:name=".util.BaseCalendar" />
+        <activity android:name=".util.CalendarGridView" />
+        <activity android:name=".util.AdvancedCountdownTimer" />
+
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true" />
 
         <receiver
             android:name=".util.CallAlarm"

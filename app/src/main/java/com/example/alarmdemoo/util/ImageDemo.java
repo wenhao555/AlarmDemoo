@@ -6,9 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TabHost;
 
+import com.example.alarmdemoo.JishibenActivity;
 import com.example.alarmdemoo.MainActivity;
 import com.example.alarmdemoo.MiaobiaoActivity;
 import com.example.alarmdemoo.R;
+import com.example.alarmdemoo.WeatherActivity;
 
 public class ImageDemo extends TabActivity
 {
@@ -29,14 +31,14 @@ public class ImageDemo extends TabActivity
         tabHost.addTab(tabHost.newTabSpec("TAB3")
                 .setIndicator("日历", getResources().getDrawable(R.drawable.calendar))
                 .setContent(new Intent(this, BaseCalendar.class)));
-		
-		/*tabHost.addTab(tabHost.newTabSpec("TAB4")
-				.setIndicator("���±�",getResources().getDrawable(R.drawable.jsb))
-				.setContent(new Intent(this,activitydiary.class)));
-		
-		tabHost.addTab(tabHost.newTabSpec("TAB5")
-				.setIndicator("����ʱ��",getResources().getDrawable(R.drawable.clock3))
-				.setContent(new Intent(this,MiaobiaoActivity.class)));*/
+
+        tabHost.addTab(tabHost.newTabSpec("TAB4")
+                .setIndicator("天气", getResources().getDrawable(R.drawable.jsb))
+                .setContent(new Intent(this, WeatherActivity.class)));
+
+        tabHost.addTab(tabHost.newTabSpec("TAB5")
+                .setIndicator("记事本", getResources().getDrawable(R.drawable.clock3))
+                .setContent(new Intent(this, JishibenActivity.class)));
     }
 
 }
